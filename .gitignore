@@ -1,0 +1,10 @@
+*.npy
+*.txt
+*.bin
+*.pkl
+*.pyc
+*.pck
+*.gz
+*.gpg
+
+lib/
