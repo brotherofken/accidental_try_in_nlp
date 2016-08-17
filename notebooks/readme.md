@@ -51,3 +51,15 @@ Naive attempt to cluster sentences by content.
 Maximum value in this matrix is limited to 5
 4. Apply Truncated SVD
 5. Cluster sentence feature vectors using MiniBatchKMeans.
+
+### find_patterns.py
+
+Attempt to find similar sentences manually.
+
+Distance between two sentences is distance between mean of their word vectors.
+First sentence is a query which consists of keywords, e.g.
+```
+tokens_filter = 'поздравляю тебя вас день отмечать отмечает днем днём поздравления праздником праздничком прошедшим желаю чтоб чтобы'.split(' ')
+```
+Is a query for congratulation message.
+Then we just filter messages that passes distance threshold.
